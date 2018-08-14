@@ -12,7 +12,7 @@ Select the text to be searched, right click and choose "GetHelp - Google"
 
 Select the text to be searched, right click and choose "GetHelp - StackOverflow"
 
-\!\[feature X\]\(assets/images/screenshot.png\)
+![feature X](assets/images/screenshot.png)
 
 ## Requirements
 

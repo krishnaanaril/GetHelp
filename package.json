@@ -11,16 +11,32 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.sayHello"
+        "onCommand:extension.getHelpGoogle"
     ],
     "main": "./out/extension",
     "contributes": {
         "commands": [
             {
-                "command": "extension.sayHello",
-                "title": "Hello World"
+                "command": "extension.getHelpGoogle",
+                "title": "GetHelp - Google"
+            },
+            {
+                "command": "extension.getHelpSO",
+                "title": "GetHelp - StackOverflow"
             }
-        ]
+        ],
+        "menus": {
+          "editor/context": [{
+              "when": "editorHasSelection",
+              "command": "extension.getHelpGoogle",
+              "group": "navigation"
+        },
+        {
+            "when": "editorHasSelection",
+            "command": "extension.getHelpSO",
+            "group": "navigation"
+      }]
+      }
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",

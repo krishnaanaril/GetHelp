@@ -3,7 +3,7 @@
     "displayName": "GetHelp",
     "description": "A extension to do Google/StackOverflow search quickly",
     "version": "0.0.1",
-    "publisher": "none",
+    "publisher": "krishnaanaril",
     "engines": {
         "vscode": "^1.26.0"
     },

@@ -10,6 +10,28 @@
     "categories": [
         "Other"
     ],
+    "keywords": [
+        "Google", 
+        "Search", 
+        "GetHelp", 
+        "Help",
+        "StackOverflow"
+    ],
+    "license": "SEE LICENSE IN LICENSE.txt",
+    "homepage": "https://github.com/krishnaanaril/GetHelp/blob/master/README.md",
+    "bugs": {
+        "url": "https://github.com/krishnaanaril/GetHelp/issues",
+        "email": "krishnamohan.a.m@gmail.com"
+    },
+    "icon": "assets/images/icon.png",
+    "galleryBanner": {
+        "color": "#ffffff",
+        "theme": "dark"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/krishnaanaril/GetHelp.git"
+    },
     "activationEvents": [
         "onCommand:extension.getHelpGoogle"
     ],

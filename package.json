@@ -2,7 +2,7 @@
     "name": "gethelp",
     "displayName": "GetHelp",
     "description": "A extension to do Google/StackOverflow search quickly",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "krishnaanaril",
     "engines": {
         "vscode": "^1.26.0"
@@ -11,9 +11,9 @@
         "Other"
     ],
     "keywords": [
-        "Google", 
-        "Search", 
-        "GetHelp", 
+        "Google",
+        "Search",
+        "GetHelp",
         "Help",
         "StackOverflow"
     ],
@@ -48,30 +48,35 @@
             }
         ],
         "menus": {
-          "editor/context": [{
-              "when": "editorHasSelection",
-              "command": "extension.getHelpGoogle",
-              "group": "navigation"
-        },
-        {
-            "when": "editorHasSelection",
-            "command": "extension.getHelpSO",
-            "group": "navigation"
-      }]
-      }
+            "editor/context": [
+                {
+                    "when": "editorHasSelection",
+                    "command": "extension.getHelpGoogle",
+                    "group": "navigation"
+                },
+                {
+                    "when": "editorHasSelection",
+                    "command": "extension.getHelpSO",
+                    "group": "navigation"
+                }
+            ]
+        }
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",
         "compile": "tsc -p ./",
         "watch": "tsc -watch -p ./",
         "postinstall": "node ./node_modules/vscode/bin/install",
-        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+        "test": "npm run compile && node ./node_modules/vscode/bin/test",
+        "lint": "eslint -c .eslintrc.js --ext .ts ./src"
     },
     "devDependencies": {
-        "typescript": "^2.6.1",
-        "vscode": "^1.1.21",
-        "tslint": "^5.8.0",
-        "@types/node": "^8.10.25",
-        "@types/mocha": "^2.2.42"
+        "@types/mocha": "^2.2.42",
+        "@types/node": "^8.10.66",
+        "@typescript-eslint/eslint-plugin": "^4.14.1",
+        "@typescript-eslint/parser": "^4.14.1",
+        "eslint": "^7.19.0",
+        "typescript": "^4.1.3",
+        "vscode": "^1.1.37"
     }
 }
